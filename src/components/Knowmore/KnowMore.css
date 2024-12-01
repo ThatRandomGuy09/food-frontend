@@ -1,0 +1,123 @@
+.KnowMore__comp-container {
+  width: 90%;
+  height: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 1rem;
+  padding-bottom: 4rem;
+}
+
+.KnowMore__comp-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 4rem;
+}
+
+.KnowMore__comp-title {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.KnowMore__comp-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.KnowMore__comp-link {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #fc8a06;
+}
+.KnowMore__comp-content {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 5rem 3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: auto;
+}
+
+.KnowMore__comp-left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.75rem;
+  text-align: center;
+}
+
+.KnowMore__comp-highlight {
+  background-color: #fc8a06;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+}
+
+.KnowMore__comp-questions {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.125rem;
+  font-weight: bold;
+  gap: 1.75rem;
+}
+
+.KnowMore__comp-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.KnowMore__comp-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.KnowMore__comp-card {
+  width: 220px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  background-color: #d9d9d9;
+}
+
+.Knowmore_card-title {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.Knowmore_card-image {
+  width: 128px;
+}
+
+.Knowmore_card-description {
+  font-weight: medium;
+  font-size: 1rem;
+}
+
+.KnowMore__comp-description {
+  text-align: center;
+  font-size: 1.125rem;
+  margin-top: 2rem;
+}

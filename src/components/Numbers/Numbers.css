@@ -1,0 +1,23 @@
+.numbers-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1.5rem 0;
+  background-color: #fc8a06;
+  border-radius: 0.75rem;
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+.numbers-item {
+  border-right: 1px solid white;
+  padding-right: 2.5rem;
+  color: white;
+}
+
+.numbers-item.no-border {
+  border-right: none;
+}

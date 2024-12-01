@@ -1,0 +1,84 @@
+.navbar {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem auto;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.home {
+  color: white;
+  background-color: #fc8a06;
+  border-radius: 120px;
+  padding: 10px 20px;
+  height: max-content;
+  width: max-content;
+}
+
+.others {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profile {
+  background-color: #03081f;
+  color: white;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 120px;
+  column-gap: 5px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+  }
+  @media (min-width: 769px) {
+    .hamburger {
+      display: none;
+    }
+
+    .navigation {
+      display: flex;
+    }
+
+    .logo {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+}

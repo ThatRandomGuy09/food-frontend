@@ -1,0 +1,84 @@
+.discountCard-container {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.discountCard-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discountCard-discount {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  background: #03081f;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: 10;
+}
+
+.discountCard-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right top, rgba(0, 0, 0, 1), transparent);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+}
+
+.discountCard-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.discountCard-subHeading {
+  font-size: 14px;
+  color: #f1a10a;
+  margin: 0;
+}
+
+.discountCard-mainHeading {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 0 0;
+}
+
+.discountCard-add {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #03081f;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

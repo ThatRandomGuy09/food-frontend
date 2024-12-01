@@ -1,0 +1,204 @@
+.order-details-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.order-detail-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+.order-detail-title img {
+  display: block;
+}
+.order-detail-title div {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+.order-details-container {
+  display: flex;
+
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  font-family: Poppins, sans-serif;
+}
+
+.order-items {
+  width: 60%;
+  border: 1px solid #03081f;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fff;
+}
+
+.order-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.CheckPage_item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #202938;
+}
+
+.CheckPage_item-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.CheckPage_item-info {
+  flex: 1;
+  margin-left: 10px;
+}
+.CheckPage_item-info p {
+  margin: 0;
+}
+.CheckPage_item-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.CheckPage_item-quantity {
+  font-size: 14px;
+  color: #666;
+}
+
+.CheckPage_item-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #028643;
+}
+
+.notes-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.notes-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.notes-input {
+  width: 97%;
+  padding: 12px;
+  border: 1px solid #03081f;
+  border-radius: 120px;
+  margin-top: 5px;
+}
+
+.payment-summary {
+  width: 35%;
+  background: #fff;
+}
+
+.delivery-address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0.7rem;
+  border-radius: 120px;
+  border: 1px solid #03081f;
+}
+.delivery-address img {
+  padding-right: 1rem;
+}
+.address-icon {
+  width: 42px;
+  height: 42px;
+}
+
+.address-icon img {
+  padding: 0.7rem 0.8rem;
+  border-radius: 120px;
+  border: 1px solid #03081f;
+}
+.delivery-add-icon {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.address-info {
+  flex: 1;
+  margin-left: 10px;
+}
+.address-info p {
+  margin: 0;
+}
+.address-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.address-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.arrow-icon {
+  font-size: 18px;
+  color: #ff9800;
+}
+
+.divider {
+  border: 0.5px solid #202938;
+  margin: 18px 0;
+}
+
+.summary-details {
+  margin-bottom: 20px;
+}
+.summary-details p {
+  margin: 0;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #83858a;
+  margin-bottom: 10px;
+}
+
+.subtotal {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.payment-button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 1rem;
+  background: #ff9800;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 120px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.payment-button:hover {
+  background: #e68900;
+}

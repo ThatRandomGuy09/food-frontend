@@ -1,0 +1,24 @@
+.productBar-container {
+  width: 100%;
+  background-color: #fc8a06;
+  margin: 2rem 0;
+}
+
+.productBar-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.productBar-offers {
+  background-color: #03081f;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+}

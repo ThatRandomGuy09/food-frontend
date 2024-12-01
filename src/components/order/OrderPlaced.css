@@ -1,0 +1,79 @@
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.success-icon {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.outer-circle {
+  width: 195px;
+  height: 195px;
+  border-radius: 50%;
+  background: rgba(50, 182, 56, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 1;
+}
+
+.inner-circle img {
+  height: 145px;
+}
+
+.checkmark {
+  font-size: 72px;
+  color: white;
+  font-weight: bold;
+}
+
+.order-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 10px 0;
+}
+
+.order-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.order-details {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.back-Button{
+  margin-top: 20px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 120px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}

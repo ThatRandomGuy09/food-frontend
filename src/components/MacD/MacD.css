@@ -1,0 +1,89 @@
+.MacD-container {
+  position: relative;
+}
+
+.MacD-card {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5rem;
+}
+
+.MacD-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.MacD-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 8, 31, 0.9);
+}
+
+.MacD-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2.5rem;
+}
+
+.MacD-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.MacD-tagline {
+  font-size: 1.25rem;
+}
+
+.MacD-title {
+  font-size: 3.375rem;
+  font-weight: bold;
+}
+
+.MacD-details {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.MacD-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 9999px;
+}
+
+.MacD-review {
+  width: 9%;
+  transform: translate(94%, 16px);
+}
+
+.MacD-side-image {
+  width: 35%;
+}
+
+.MacD-footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  bottom: 0;
+  left: 0;
+  transform: translate(76px, 20px);
+  background-color: #f28d35;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

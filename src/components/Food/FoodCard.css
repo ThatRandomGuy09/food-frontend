@@ -1,0 +1,79 @@
+.foodCard-container {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 403px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.foodCard-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.foodCard-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1.2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.foodCard-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.foodCard-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.foodCard-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #03081f;
+}
+
+.foodCard-image-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.foodCard-image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.foodCard-add {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 88px;
+  height: 88px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #03081f;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foodCard-add:hover {
+  cursor: pointer;
+}

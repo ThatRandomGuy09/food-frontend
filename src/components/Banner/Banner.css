@@ -1,0 +1,84 @@
+.order-banner {
+  position: relative;
+  width: 90%;
+  height: 511px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(to bottom, #eeeeee, #e0e1dc);
+  margin: 2.5rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.friends-image {
+  width: 800px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  filter: drop-shadow(-8px 0px 0px rgba(0, 0, 0, 0.1));
+}
+
+.content-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.content-wrapper {
+  display: flex;
+  margin-left: 9rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.logo-image {
+  height: 55px;
+}
+
+.logo-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: #03081f;
+}
+
+.highlighted-text {
+  width: 750px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #03081f;
+  gap: 0.75rem;
+  border-radius: 50px;
+  color: white;
+  font-size: 40px;
+  padding-right: 5rem;
+}
+
+.highlighted-text .highlight {
+  color: #fc8a06;
+  text-decoration: underline;
+}
+
+.download-text {
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-left: 9rem;
+}
+
+.app-store {
+  margin-top: 1rem;
+  margin-left: 9rem;
+}

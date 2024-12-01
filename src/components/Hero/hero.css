@@ -1,0 +1,119 @@
+.hero-container {
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px;
+  z-index: 2;
+}
+
+.hero-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 8  ;
+}
+
+.main-hero-image {
+  width: auto;
+  height: 500px;
+  object-fit: contain;
+}
+
+.hero-right-section {
+  flex: 1;
+  position: relative;
+  background-color: #fc8a06;
+  border-top-left-radius: 282.5px;
+  overflow: hidden;
+}
+
+.steps-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.step {
+  position: absolute;
+  width: 320px;
+  height: auto;
+  right: 0;
+  transition: all 0.3s ease;
+}
+
+.step-image {
+  width: 100%;
+  height: auto;
+}
+
+.step1 {
+  top: 20px;
+  z-index: 100;
+  right: 185px;
+}
+
+.step2 {
+  top: 180px;
+  right: 40px;
+  z-index: 3;
+}
+
+.step3 {
+  top: 340px;
+  right: 130px;
+  z-index: 3;
+}
+
+.subscribe-section {
+  position: relative;
+  max-width: 400px;
+  margin-top: 32px;
+}
+
+.email-placeholder {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+}
+
+.subscribe-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fc8a06;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.noodle-girl-image {
+  position: absolute;
+  width: 377px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  right: 220px;
+  bottom: -180px;
+  z-index: -2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

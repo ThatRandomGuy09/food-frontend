@@ -1,0 +1,167 @@
+.addresses-container {
+  padding: 20px;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.addresses-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.addresses-header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.addresses-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.addresses-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.address-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-wrap:wrap;
+  overflow: hidden;
+  padding: 16px;
+  background: white;
+  height: 250px;
+  width: 300px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.address-card:hover {
+  border-color: #ff8c00;
+}
+
+.address-card.selected {
+  border: 2px solid #ff8c00;
+  background-color: #fff3e0;
+}
+
+.add-new {
+  border: 2px dashed #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.add-new:hover {
+  border-color: #ff8c00;
+}
+
+.add-icon {
+  font-size: 32px;
+  color: #ff8c00;
+  background-color: #FFEDD8;
+  width: 50.22px;
+  height: 50.22px;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #03081F;
+  font: 14px;
+}
+.address-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 12px;
+  color: #03081F;
+  font: 16px;
+  font-weight: 600;
+}
+
+.address-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.default-badge {
+  background: #fff3e0;
+  color: #FC8A06;
+  padding: 4px 8px;
+  border-radius: 120px;
+  font-size: 12px;
+  line-height: 14.4px;
+}
+
+.address-text {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.phone-number {
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.address-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px;
+  pointer-events: auto;
+}
+
+.action-btn.edit {
+  color: #ff8c00;
+  border-right: 1px solid #AFAFAF;
+  padding-right: 0.8rem;
+}
+
+.action-btn.remove {
+  color: #ff8c00;
+}
+
+.divider {
+  color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .addresses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .address-card {
+    height: auto;
+  }
+}

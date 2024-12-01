@@ -1,0 +1,252 @@
+.payment-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.payment-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.payment-header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.payment-header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.payment-header img {
+  width: 39px;
+  height: 39px;
+}
+
+p .back-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 15px;
+}
+
+.payment-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.payment-content {
+  display: flex;
+  gap: 20px;
+}
+
+.payment-content {
+  display: flex;
+  gap: 20px;
+}
+
+.payment-options {
+  flex: 1;
+}
+
+.wallet-section {
+  border: 1px solid #ffe8ce;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 120px;
+  margin-bottom: 10px;
+}
+.payment-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 120px;
+  margin-bottom: 10px;
+}
+
+.wallet-section {
+  cursor: pointer;
+}
+
+.wallet-content,
+.option-content {
+  display: flex;
+  align-items: center;
+}
+
+.wallet-arrow img {
+  width: 5px;
+  height: 10px;
+}
+
+.separator {
+  height: 1px;
+  background-color: #000000;
+  margin: 15px 0;
+}
+
+.payment-option {
+  cursor: pointer;
+}
+
+.payment-option.selected {
+  border-color: #ff9800;
+}
+.option-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  position: relative;
+}
+
+.option-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  opacity: 0.15;
+}
+
+.wallet {
+  color: #ff9800;
+}
+.wallet::before {
+  background-color: #ff9800;
+}
+
+.maestrocard {
+  color: #fc8a06;
+}
+.maestrocard::before {
+  background-color: #fc8a06;
+}
+
+.paypal {
+  color: #fc8a06;
+}
+.paypal::before {
+  background-color: #fc8a06;
+}
+
+.stripe {
+  color: #fc8a06;
+}
+.stripe::before {
+  background-color: #fc8a06;
+}
+
+.add-card {
+  color: #fc8a06;
+}
+.add-card::before {
+  background-color: #fc8a06;
+}
+.addIcon {
+  margin-right: 20px;
+  margin-left: 5px;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 10px;
+}
+.option-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-name {
+  font-weight: bold;
+}
+
+.option-balance {
+  font-size: 12px;
+  color: #757575;
+}
+
+.radio-button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-option.selected .radio-button {
+  border-color: #ff9800;
+}
+
+.radio-inner {
+  width: 10px;
+  height: 10px;
+  background-color: #ff9800;
+  border-radius: 50%;
+  display: none;
+}
+
+.payment-option.selected .radio-inner {
+  display: block;
+}
+
+.payment-summary {
+  flex: 0 0 auto;
+  height: max-content;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #757575;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.proceed-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #fc8a06;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.proceed-button:hover {
+  background-color: #fc8a06;
+}
+
+@media (max-width: 768px) {
+  .payment-content {
+    flex-direction: column;
+  }
+}

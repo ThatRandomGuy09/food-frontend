@@ -1,0 +1,88 @@
+.delivery-container {
+  width: 90%;
+  margin: 4rem auto;
+  border-radius: 12px;
+  box-shadow: 5px 5px 14px 0px #00000040;
+}
+
+.delivery-sections {
+  display: flex;
+}
+
+.delivery-info,
+.contact-info,
+.operational-times {
+  width: 33.33%;
+  padding: 2rem;
+}
+
+.delivery-info {
+  background-color: #fbfbfb;
+}
+
+.contact-info {
+  background-color: #fbfbfb;
+}
+
+.operational-times {
+  background-color: #03081f;
+  color: #ffffff;
+  border-radius: 0 12px 12px 0;
+}
+
+.delivery-header,
+.contact-header,
+.operation-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.delivery-title,
+.contact-title,
+.operation-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.delivery-details,
+.operation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.delivery-time,
+.operation-time {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.875rem;
+}
+
+.contact-text {
+  font-size: 0.875rem;
+  line-height: 30px;
+  margin-bottom: 1.5rem;
+}
+
+.contact-details .label {
+  font-weight: 600;
+}
+
+.contact-details .value {
+  font-weight: 700;
+  color: #03081f;
+  margin-bottom: 20px;
+}
+
+.contact-details .link:hover {
+  text-decoration: underline;
+}
+.Day {
+  font: 700;
+  color: #03081f;
+}
+.Hours {
+  font: 500;
+}
