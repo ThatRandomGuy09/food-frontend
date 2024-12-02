@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
-import OrderDetails from '../components/Order-Details-Checkout/OrderDetails';
-import Header from '../components/Header/Header';
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import OrderDetails from "../components/Order-Details-Checkout/OrderDetails";
+import Header from "../components/Header/Header";
 
 const CheckoutPage = () => {
   const { cartId } = useParams();
@@ -40,7 +40,7 @@ const CheckoutPage = () => {
 
   return (
     <div className="checkout-page">
-        <Header/>
+      <Header />
       <Navbar />
       <OrderDetails isShared={true} />
       <Footer />
