@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./AddressList.css";
 import AddressForm from "./EditAddress";
 import { getAddresses, removeAddress } from "../../utils/addressUtils";
@@ -26,7 +26,7 @@ const AddressList = ({ onAddressSelect }) => {
         if (response.ok) {
           const userData = await response.json();
           console.log(userData);
-          setUserName(userData.name); 
+          setUserName(userData.name);
         }
       } catch (error) {
         console.log(error);
@@ -57,8 +57,8 @@ const AddressList = ({ onAddressSelect }) => {
 
   const handleAddressSelect = (address) => {
     setSelectedAddressId(address.id);
-    localStorage.setItem('selectedAddress', JSON.stringify(address));
-    window.location.href = '/checkout';
+    localStorage.setItem("selectedAddress", JSON.stringify(address));
+    window.location.href = "/checkout";
   };
 
   return (
@@ -82,9 +82,11 @@ const AddressList = ({ onAddressSelect }) => {
         </div>
 
         {addresses.map((address) => (
-          <div 
-            key={address.id} 
-            className={`address-card ${selectedAddressId === address.id ? 'selected' : ''}`}
+          <div
+            key={address.id}
+            className={`address-card ${
+              selectedAddressId === address.id ? "selected" : ""
+            }`}
             onClick={() => handleAddressSelect(address)}
           >
             <div className="address-content">
