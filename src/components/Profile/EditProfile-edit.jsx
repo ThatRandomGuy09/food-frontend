@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import "./EditProfile-edit.css";
 
@@ -14,11 +14,14 @@ const EditProfileSection = ({ isOpen, onClose }) => {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5000/api/auth/me", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
+        const response = await axios.get(
+          `${import.meta.env.VITE_API_BASE_URL}/api/auth/me`,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
 
         setUserData({
           name: response.data.name,
@@ -47,7 +50,7 @@ const EditProfileSection = ({ isOpen, onClose }) => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        "http://localhost:5000/api/auth/profile",
+        `${import.meta.env.VITE_API_BASE_URL}/api/auth/profile`,
         {
           email: userData.email,
           name: userData.name,
@@ -61,7 +64,7 @@ const EditProfileSection = ({ isOpen, onClose }) => {
       );
 
       if (response.data.success) {
-        onClose(); 
+        onClose();
       } else {
         setError("Failed to update profile");
       }
@@ -91,7 +94,13 @@ const EditProfileSection = ({ isOpen, onClose }) => {
           </a>
           <h1 className="Editprofile-title">Edit Profile</h1>
         </div>
-        <button className="save-button" onClick={()=>{handleSave(); onClose()}}>
+        <button
+          className="save-button"
+          onClick={() => {
+            handleSave();
+            onClose();
+          }}
+        >
           Save
         </button>
       </div>

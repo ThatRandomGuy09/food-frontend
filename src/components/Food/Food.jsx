@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Food.css";
 import FoodCard from "./FoodCard";
 import SearchBar from "../SearchBar/SearchBar";
@@ -13,7 +13,9 @@ export default function Food() {
   useEffect(() => {
     const fetchMenuItems = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/menu");
+        const response = await fetch(
+          `${import.meta.env.VITE_API_BASE_URL}/api/menu`
+        );
         const data = await response.json();
         setMenuItems(data);
         setLoading(false);
