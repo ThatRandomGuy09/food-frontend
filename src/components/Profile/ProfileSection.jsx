@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import "./ProfileSection.css";
 import axios from "axios";
 import { getPaymentMethods } from "../../utils/paymentUtils";
@@ -22,7 +22,7 @@ const ProfileSection = ({ onEditClick }) => {
     try {
       setIsLoading(true);
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:5000/api/auth/me", {
+      const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/auth/me`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
