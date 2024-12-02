@@ -5,7 +5,7 @@ import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
 import Banner from "../components/Banner/Banner";
 import Res from "../components/categories/Res/Res";
-import KnowMore from "../components/KnowMore/KnowMore";
+import KnowMore from "../components/Knowmore/Know";
 import GetStarted from "../components/GetStarted/GetStarted";
 import Numbers from "../components/Numbers/Numbers";
 import Footer from "../components/Footer/Footer";

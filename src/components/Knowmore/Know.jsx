@@ -1,4 +1,3 @@
-import React from "react";
 import "./KnowMore.css";
 
 export default function KnowMore() {
