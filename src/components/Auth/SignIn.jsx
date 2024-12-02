@@ -93,7 +93,7 @@ const SignIn = () => {
         </form>
         <div className="signup-text">
           <p>
-            Don’t you have an account? <a href="/Signup">Sign up</a>
+            Don’t you have an account? <a href="/signup">Sign up</a>
           </p>
         </div>
       </div>
