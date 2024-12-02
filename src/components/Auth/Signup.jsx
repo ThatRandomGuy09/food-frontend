@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./SignUp.css";
+import { useState } from "react";
+import "./Signup.css";
 import { signup } from "../../utils/api";
 import { useNavigate } from "react-router-dom";
 
