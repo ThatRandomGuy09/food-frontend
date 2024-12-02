@@ -1,14 +1,14 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
-import SignIn from "./pages/Signin";
-import SignUp from "./pages/Signup";
-import Home from "./pages/Home";
+import SignIn from "./pages/SigninPage";
+import SignUp from "./pages/SignupPage";
+import Home from "./pages/HomePage";
 import Checkout from "./pages/Checkout";
-import OrderSuccess from "./pages/OrderSuccess";
-import Product from "./pages/Product";
-import Profile from "./pages/Profile";
-import Payement from "./pages/Payement";
+import OrderSuccess from "./pages/OrderSuccessPage";
+import Product from "./pages/ProductPage";
+import Profile from "./pages/ProfilePage";
+import Payement from "./pages/PaymentPage";
 import AddressPage from "./pages/AddressPage";
 import SharedCheckout from "./pages/CheckoutPage";
 function App() {
