@@ -1,4 +1,3 @@
-import React from "react";
 import Footer from "../components/Footer/Footer";
 import Signup from "../components/Auth/Signup";
 import { useState } from "react";
@@ -16,7 +15,7 @@ export default function SignUp() {
     e.preventDefault();
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/auth/Signup`,
+        `${import.meta.env.VITE_API_BASE_URL}/api/auth/signup`,
         {
           method: "POST",
           headers: {
