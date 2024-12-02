@@ -16,7 +16,7 @@ export default function SignUp() {
     e.preventDefault();
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/auth/signup`,
+        `${import.meta.env.VITE_API_BASE_URL}/api/auth/Signup`,
         {
           method: "POST",
           headers: {
